@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Itangiuh;
+    src: url(Fonts/ItangiuhRegularPersonalUseOnly-0WmV9.ttf);
+} 
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(Fonts/HelveticaNeue-Bold.otf);
+} 
+
+body.home {
+    background-color: #7391f1;
+}
+
+main {
+    background-color: #e6d88f;
+}
+
+div.full-header {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#Title {
+    width: auto;
+    height: 100px;
+}
+
+p.name {
+    font-size: 24px;
+    font-family: Itangiuh;
+    text-align: right;
+    justify-content: right; 
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.webkit-scroll-container {
+    display: flex;
+    gap: 16px;                  
+    width: 100%;
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    overflow-x: auto;           
+    overflow-y: hidden;         
+    scroll-behavior: smooth;    
+
+    -webkit-overflow-scrolling: touch;
+
+    will-change: transform;
+}
+
+.webkit-scroll-container img {
+    height: 300px;              
+    width: auto;                
+    flex-shrink: 0;             
+
+    object-fit: cover;          
+    border-radius: 8px;
+}
+
+.webkit-scroll-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.image-container {
+    position: relative;
+    height: 300px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-container img {
+    display: block;
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    background: rgba(128, 128, 128, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay,
+.image-container:focus-within .overlay {
+    opacity: 1;
+}
+
+.charm-regular {
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.overlay-text {
+    margin: 0;
+    color: white;
+    font-family: "Charm", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: none;
+    background-color: #fc75a9;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+ul li {
+    float:left;
+    padding-left: 19%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #f7e06d;
+    font-family: HelveticaNeue; 
+    font-size: 1.3em;
+    padding: 1em;
+}
+
+ul li a:hover {
+    background-color: #fe9bc1;
+    color: #874e26;
+    padding: 0.5em;
+}
